@@ -66,3 +66,7 @@ C:\Users\cecko\source\repos\DevUniversity\DevUniversity\obj\Debug\netcoreapp2.1\
 C:\Users\cecko\source\repos\DevUniversity\DevUniversity\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.g.cshtml.cs
 C:\Users\cecko\source\repos\DevUniversity\DevUniversity\obj\Debug\netcoreapp2.1\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs
 C:\Users\cecko\source\repos\DevUniversity\DevUniversity\obj\Debug\netcoreapp2.1\DevUniversity.csprojAssemblyReference.cache
+C:\Users\cecko\source\repos\DevUniversity\DevUniversity\obj\Debug\netcoreapp2.1\Razor\Views\Courses\Index.g.cshtml.cs
+C:\Users\cecko\source\repos\DevUniversity\DevUniversity\obj\Debug\netcoreapp2.1\Razor\Views\Courses\ActiveCourses.g.cshtml.cs
+C:\Users\cecko\source\repos\DevUniversity\DevUniversity\obj\Debug\netcoreapp2.1\Razor\Views\Courses\MyCourses.g.cshtml.cs
+C:\Users\cecko\source\repos\DevUniversity\DevUniversity\obj\Debug\netcoreapp2.1\Razor\Views\Courses\_DatePartial.g.cshtml.cs

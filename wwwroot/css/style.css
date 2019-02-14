@@ -1,0 +1,28 @@
+﻿.menu {
+    background-color: #222222;
+    color: silver;
+    text-align: center;
+    font-size: 16px;
+    opacity: 0.9;
+    transition: 0.9s;
+}
+
+.menu:hover {
+    background-color: cornflowerblue;
+    opacity: 1;
+}
+
+.navbar-link {
+    text-align: center;
+    font-size: 14px;
+    color: silver;
+}
+
+#logout {
+    color: orangered;
+}
+
+#logout:hover {
+    background-color:inherit;
+    color: white;
+}

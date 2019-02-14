@@ -1,0 +1,17 @@
+﻿@using Microsoft.AspNetCore.Identity;
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
+    ViewData["Title"] = "_DatePartial";
+}
+<hr />
+@if (SignInManager.IsSignedIn(User))
+{
+    <h3>In development.</h3>
+}
+else {
+    <h3>You need to be loged in to see this page!</h3>
+}
+

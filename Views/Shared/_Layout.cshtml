@@ -1,4 +1,10 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity;
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -6,6 +12,10 @@
     <title>@ViewData["Title"] - DevUniversity</title>
 
     <environment include="Development">
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='css/style.css?v=@Guid.NewGuid().ToString()' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" type="text/css" href="~/css/style.css?v=51" />
+        -->
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
@@ -17,6 +27,7 @@
     </environment>
 </head>
 <body>
+
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -28,20 +39,26 @@
                 </button>
                 <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">DevUniversity</a>
             </div>
-            <div class="navbar-collapse collapse">
+            <div class="navbar_nav">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                </ul>
-                <partial name="_LoginPartial" />
+                    <li class="menu"><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li class="menu"><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
+                    <li class="menu"><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    @if (SignInManager.IsSignedIn(User))
+                    {
+                        <li class="menu"><a asp-area="" asp-controller="Courses" asp-action="ActiveCourses">Active Courses</a></li>
+                        <li class="menu"><a asp-area="" asp-controller="Courses" asp-action="MyCourses">My Courses</a></li>
+                    }
+
             </div>
+            </ul>
+            <partial name="_LoginPartial" />
         </div>
     </nav>
 
     <partial name="_CookieConsentPartial" />
-
     <div class="container body-content">
+
         @RenderBody()
         <hr />
         <footer>
