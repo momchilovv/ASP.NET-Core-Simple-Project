@@ -1,0 +1,13 @@
+[12.02.2019]
+Version 1.0.0:
+
+-> Users now can change their usernames.
+-> Removed the official ASP.NET slides.
+
+[14.02.2019]
+Version 1.0.1:
+
+-> Added new "Course" Controller.
+-> Added simple CSS design.
+-> Added two new Views - "My Courses" and "Active Courses". (Courses will be added in the next update.)
+-> "My Courses" and "Active Courses" are not visible for guest users.
